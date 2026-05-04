@@ -18,23 +18,24 @@
   }
 } */
 
-.apple {
-  position: relative;
-  transition: all 5s ease-in-out;
-}
-.apple::after {
-  content: "Apple Icon";
-  opacity: 0;
-  background-color: gray;
-  color: white;
-  font-size: 10px;
-  position: absolute;
-  top: 2.5rem;
-  right: 0;
-  /* transition: all 5s ease-in-out ; */
+.apple { 
+  position: relative; 
+} 
+
+.apple::after { 
+  content: "Apple Icon"; 
+  opacity: 0; 
+  background-color: gray; 
+  color: white; 
+  font-size: 10px; 
+  position: absolute; 
+  top: 2.5rem; 
+  right: 0; 
+  width: max-content;    
+  transition: all 2s ease-in-out; 
+} 
+
+.apple:hover::after { 
+  opacity: 1; 
 }
 
-.apple:hover::after {
-  opacity: 1;
-  /* transition: all 5s ease-in-out ; */
-}
